@@ -1,6 +1,19 @@
 import styles from './Players.module.css';
 import futbinLogo from '../../assets/futbin.png';
 import reveszImg from '../../assets/Révész.png';
+import kristofImg from '../../assets/Kristóf.png';
+import fraterImg from '../../assets/Fráter.png';
+import medveImg from '../../assets/Medve.png';
+import hensiImg from '../../assets/Hensi.png';
+import baloghImg from '../../assets/Balogh.png';
+import szaboImg from '../../assets/Szabó (2).png';
+import rehoImg from '../../assets/Rehó.png';
+import rodriImg from '../../assets/rodri.png';
+import hanImg from '../../assets/han.png';
+import bellImg from '../../assets/bell.png';
+import vanImg from '../../assets/van.png';
+import haalImg from '../../assets/haal.png';
+import hakimiImg from '../../assets/hakimi.png';
 import hungaryImg from '../../assets/hungary.png';
 import premImg from '../../assets/prem.png';
 import mancityImg from '../../assets/mancity.png';
@@ -21,6 +34,19 @@ import playersData from '../../data/playersData.json';
 
 const imageMap = {
     revesz: reveszImg,
+    kristof: kristofImg,
+    frater: fraterImg,
+    medve: medveImg,
+    hensi: hensiImg,
+    balogh: baloghImg,
+    szabo: szaboImg,
+    reho: rehoImg,
+    rodri: rodriImg,
+    han: hanImg,
+    bell: bellImg,
+    van: vanImg,
+    haal: haalImg,
+    hakimi: hakimiImg,
 };
 
 function Players({ playerKey = 'revesz' }) {

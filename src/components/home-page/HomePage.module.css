@@ -479,5 +479,3 @@ progress[value]::-moz-progress-bar {
     font-weight: bold;
     text-align: center;
 }
-
-/* chem / players styles moved to Players.module.css */
