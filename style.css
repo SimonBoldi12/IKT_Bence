@@ -1,0 +1,475 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 150dvh;
+    width: 100%;
+    background: #1f124a;
+    background: linear-gradient(95deg,rgba(31, 18, 74, 1) 0%, rgba(36, 137, 209, 1) 35%, rgba(0, 255, 102, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.keresosav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keresosav input{
+    height: 50px;
+    width: 500px;
+    padding: 15px;
+    border: 2px solid rgb(167, 165, 165);
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-size: 12pt;
+}
+#kereses2{
+    height: 40px;
+    width: 250px;
+    padding: 15px;
+    border: 2px solid rgb(167, 165, 165);
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    font-size: 12pt;
+}
+#kereses2:focus{
+    border: 1px solid rgb(77, 220, 125);
+}
+#kereses2::placeholder{
+    color: white;
+}
+.keresosav input:focus{
+    border: 1px solid rgb(77, 220, 125);
+}
+
+.keresosav input::placeholder{
+    color: white;
+}
+.keresosav .kep img{
+    width: 50%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.playerName{
+    width: 50%;
+    padding: 10px;
+    color: white;
+    font-size: 13px;
+    margin: 10px auto;
+}
+.ertekeles img{
+    width: 30px;
+}
+.sor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 30px;
+    height: 25px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(27, 27, 27);
+}
+.kartyakep img {
+    width: 280px;
+}
+.kartyakep{
+    margin: 10px auto;
+    text-align: left;
+    width: 58%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    justify-content: left;
+    align-items: center;
+}
+#windows{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 10px;
+}
+.price{
+    padding: 10px;
+    background-color: #292828;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    width: 218px;
+    height: 310px;
+    font-weight: bold;
+}
+
+#zold{
+    color: rgb(16, 214, 16);
+}
+.ar img{
+    width: 10px;
+    height: 10px;
+}
+#ar-nagy{
+    font-size: 26px;
+}
+#kicsi p {
+    font-size: 10px;
+}
+.ar p {
+    margin: 5px;
+}
+
+.frissit p{
+    font-size: 10pt;
+}
+.ar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.adatok{
+    display: flex;
+}
+.ertekeles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo2 img{
+    width: 40px;
+    height: 40px;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.logo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#btn1{
+    background-color: rgb(77, 220, 125);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.keresesek{
+    display: flex;
+    justify-content: center;
+}
+
+.popular{
+    text-align: center;
+}
+
+.popular a {
+    color: rgb(77, 220, 125);
+    text-decoration: none;
+    font-weight: bold;
+}
+.kartyak img{
+    width: 170px;
+    margin: 5px;
+    cursor: pointer;
+}
+.kartyak{
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+}
+.adatsor{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.adatok p {
+    padding: 10px 20px;
+    border: 2px solid rgb(77, 220, 125);
+    font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    margin: 15px;
+    font-size: 12pt;
+    background-color: rgb(27, 27, 27);
+}
+
+.keresesek p{
+    padding: 10px;
+    border: 1px solid white;
+    font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    margin: 15px;
+    font-size: 12pt;
+}
+
+.stat img{
+    width: 15px;
+    height: 15px;
+}
+
+.stat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#feher{
+    color: white;
+}
+.csapat{
+    display: flex;
+    gap: 60px;
+    color: rgb(77, 220, 125);
+    font-weight: bold;
+}
+.csapat .stat {
+    font-size: 9pt;
+}
+.skills{
+    display: flex;
+    gap: 20px;
+    color: #b4b4b4;
+    flex-wrap: wrap;
+    font-size: 9pt;
+}
+
+.playstyles{
+    display: flex;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap;
+    font-size: 10pt;
+}
+.statisztika{
+    background-color: rgba(41, 40, 40, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+}
+
+.playstyles .stat img{
+    width: 30px;
+    height: 30px;
+}
+
+.playstyles .stat{
+    display: flex;
+    flex-direction: column;
+}
+
+.playstyles .stat p{
+    margin: 0;
+    font-size: 13px;
+}
+.roles{
+    color: #b4b4b4;
+    font-size: 9pt;
+    margin-top: 15px;
+}
+
+#vil-zold{
+    color: rgb(60, 202, 24);
+}
+
+.specialAdatok{
+    background-color: #292828;
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 10px 20px;
+    height: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ratecim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.ratesor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.ratesor span:first-child{
+    color: #999999;
+}
+.ratesor span:last-child{
+    color: rgb(0, 200, 0);
+}
+.ratingcollumn{
+    width: 172px;
+}
+.cim{
+    color: white;
+}
+.number{
+    color: rgb(0, 200, 0);
+}
+.szurke{
+    color: #999999;
+}
+.ratings{
+    width: 566px;
+    display: grid;
+    grid-template-columns: 175px 175px 175px;
+    grid-template-rows: 215px 215px;
+    gap: 20px;
+}
+.sarga{
+    color: #F1BD1F;
+}
+.piros{
+    color: #D21233;
+}
+progress {
+  width: 100%;        
+  height: 7px;         
+  border-radius: 50px;
+  overflow: hidden;     
+  background-color: #eee;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 50px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: rgb(0, 200, 0);
+  border-radius: 50px;
+  transition: width 0.3s ease; 
+}
+
+/* Firefox támogatás */
+progress[value]::-moz-progress-bar {
+  background-color: rgb(0, 200, 0);
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+
+
+#sarga[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 50px;
+}
+
+#sarga[value]::-webkit-progress-value {
+  background-color: #F1BD1F;
+  border-radius: 50px;
+  transition: width 0.3s ease; 
+}
+
+/* Firefox támogatás */
+#sarga[value]::-moz-progress-bar {
+  background-color: #F1BD1F;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+#piros[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 50px;
+}
+
+#piros[value]::-webkit-progress-value {
+  background-color: #D21233;
+  border-radius: 50px;
+  transition: width 0.3s ease; 
+}
+
+#piros[value]::-moz-progress-bar {
+  background-color: #D21233;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.persons img{
+    width: 20px;
+    height: 20px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 30px 80px 80px 80px;
+    
+}
+
+.nation{
+    display: grid;
+    grid-template-columns: 30px 80px 80px 80px;
+}
+
+.liga{
+    display: grid;
+    grid-template-columns: 30px 80px 80px 80px;
+}
+#top{
+    font-size: 9pt;
+    color: #999999;
+    font-weight: bold;
+}
+.harom{
+    
+}
+
+.chem{
+    width: 100%;
+    padding: 0px 20px;
+
+}
+
+.chem h1 {
+    color: white;
+    font-size: 14pt;
+    margin: 10px 0;
+}
+.exp{
+    color: white;
+    padding: 3px 10px;
+    border-radius: 13px;
+    background-color: rgb(0, 140, 255);
+    font-weight: bold;
+    text-align: center;
+}
