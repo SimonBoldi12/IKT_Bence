@@ -16,22 +16,22 @@ import vanImg from '../../assets/van.png';
 import haalImg from '../../assets/haal.png';
 import hakimiImg from '../../assets/hakimi.png';
 
-function HomePage() {
+function HomePage({ onPlayerSelect }) {
     const players = [
-        { src: reveszImg, alt: 'Révész', link: '/players' },
-        { src: kristofImg, alt: 'Kristóf' },
-        { src: fraterImg, alt: 'Fráter' },
-        { src: medveImg, alt: 'Medve' },
-        { src: hensiImg, alt: 'Hensi' },
-        { src: baloghImg, alt: 'Balogh' },
-        { src: szaboImg, alt: 'Szabó' },
-        { src: rehoImg, alt: 'Rehó' },
-        { src: rodriImg, alt: 'Rodri' },
-        { src: hanImg, alt: 'Han' },
-        { src: bellImg, alt: 'Bell' },
-        { src: vanImg, alt: 'Van' },
-        { src: haalImg, alt: 'Haal' },
-        { src: hakimiImg, alt: 'Hakimi' },
+        { src: reveszImg, alt: 'Révész', key: 'revesz' },
+        { src: kristofImg, alt: 'Kristóf', key: 'kristof' },
+        { src: fraterImg, alt: 'Fráter', key: 'frater' },
+        { src: medveImg, alt: 'Medve', key: 'medve' },
+        { src: hensiImg, alt: 'Hensi', key: 'hensi' },
+        { src: baloghImg, alt: 'Balogh', key: 'balogh' },
+        { src: szaboImg, alt: 'Szabó', key: 'szabo' },
+        { src: rehoImg, alt: 'Rehó', key: 'reho' },
+        { src: rodriImg, alt: 'Rodri', key: 'rodri' },
+        { src: hanImg, alt: 'Han', key: 'han' },
+        { src: bellImg, alt: 'Bell', key: 'bell' },
+        { src: vanImg, alt: 'Van', key: 'van' },
+        { src: haalImg, alt: 'Haal', key: 'haal' },
+        { src: hakimiImg, alt: 'Hakimi', key: 'hakimi' },
     ];
 
     return (
@@ -66,13 +66,13 @@ function HomePage() {
                 </div>
                 <div className={styles.kartyak}>
                     {players.map((player, index) => (
-                        player.link ? (
-                            <a key={index} href={player.link}>
-                                <img src={player.src} alt={player.alt} />
-                            </a>
-                        ) : (
-                            <img key={index} src={player.src} alt={player.alt} />
-                        )
+                        <button
+                            key={index}
+                            onClick={() => onPlayerSelect && onPlayerSelect(player.key)}
+                            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+                        >
+                            <img src={player.src} alt={player.alt} />
+                        </button>
                     ))}
                 </div>
                 <div className={styles.popular}>
