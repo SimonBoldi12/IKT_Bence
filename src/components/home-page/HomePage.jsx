@@ -19,12 +19,12 @@ function HomePage() {
     ];
 
     return (
-        <div>
+        <div className={styles.body}>
             <nav>
-                <div className="logo">
+                <div className={styles.logo}>
                     <img src="./assets/futbin.png" alt="" />
                 </div>
-                <div className="menu">
+                <div className={styles.menu}>
                     <a href="">Players</a>
                     <a href="">Squad builder</a>
                     <a href="">SBCs</a>
@@ -33,14 +33,14 @@ function HomePage() {
                 </div>
                 <button id="btn1">Log in</button>
             </nav>
-            <div className="container">
-                <div className="keresosav">
-                    <div className="kep">
+            <div className={styles.container}>
+                <div className={styles.keresosav}>
+                    <div className={styles.kep}>
                         <img src="./assets/futbin (2).png" alt="" />
                     </div>
                     <input id="kereses" type="text" placeholder="Search for EA FC26 player..." />
                 </div>
-                <div className="keresesek">
+                <div className={styles.keresesek}>
                     <p>Popular</p>
                     <p>Latest promo</p>
                     <p>New players</p>
@@ -48,18 +48,24 @@ function HomePage() {
                     <p>Evolutions</p>
                     <p>Cheapest by rating</p>
                 </div>
-                <div className="kartyak">
-                    {players.map((player, index) => (
-                        player.link ? (
-                            <a key={index} href={player.link}>
-                                <img src={player.src} alt="" />
-                            </a>
-                        ) : (
-                            <img key={index} src={player.src} alt="" />
-                        )
-                    ))}
+                <div className={styles.kartyak}>
+                    <a href="./players/revesz.html">
+                    <img src="./assets/Révész.png" alt="" /></a>
+                    <img src="./assets/Kristóf.png" alt="" />
+                    <img src="./assets/Fráter.png" alt="" />
+                    <img src="./assets/Medve.png" alt="" />
+                    <img src="./assets/Hensi.png" alt="" />
+                    <img src="./assets/Balogh.png" alt="" />
+                    <img src="./assets/Szabó (2).png" alt="" />
+                    <img src="./assets/Rehó.png" alt="" />
+                    <img src="./assets/rodri.png" alt="" />
+                    <img src="./assets/han.png" alt="" />
+                    <img src="./assets/bell.png" alt="" />
+                    <img src="./assets/van.png" alt="" />
+                    <img src="./assets/haal.png" alt="" />
+                    <img src="./assets/hakimi.png" alt="" />
                 </div>
-                <div className="popular">
+                <div className={styles.popular}>
                     <a href="https://www.futbin.com/popular" target="_blank" rel="noopener noreferrer">
                         All popular players
                     </a>
