@@ -12,10 +12,32 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+}
+
+.btn1{
+    background-color: rgb(77, 220, 125);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+}
 .keresosav{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container{
+    width: 100%;
 }
 .keresosav input{
     height: 50px;
@@ -53,18 +75,12 @@
 .keresosav .kep img{
     width: 50%;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    padding: 10px;
-    align-items: center;
-}
 nav a{
     text-decoration: none;
     color: white;
     margin: 15px;
 }
+
 .menu{
     display: flex;
     justify-content: space-around;
@@ -173,13 +189,13 @@ nav a{
     gap: 10px;
 }
 
-#btn1{
-    background-color: rgb(77, 220, 125);
-    color: black;
-    border: none;
-    border-radius: 5px;
+.keresesek p{
     padding: 10px;
+    border: 1px solid white;
     font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    margin: 15px;
     font-size: 12pt;
 }
 
@@ -197,16 +213,19 @@ nav a{
     text-decoration: none;
     font-weight: bold;
 }
+
 .kartyak img{
     width: 170px;
     margin: 5px;
     cursor: pointer;
 }
+
 .kartyak{
     width: 70%;
     margin: 50px auto;
     text-align: center;
 }
+
 .adatsor{
     display: flex;
     justify-content: space-around;
@@ -223,16 +242,6 @@ nav a{
     margin: 15px;
     font-size: 12pt;
     background-color: rgb(27, 27, 27);
-}
-
-.keresesek p{
-    padding: 10px;
-    border: 1px solid white;
-    font-weight: bold;
-    border-radius: 15px;
-    color: white;
-    margin: 15px;
-    font-size: 12pt;
 }
 
 .stat img{
