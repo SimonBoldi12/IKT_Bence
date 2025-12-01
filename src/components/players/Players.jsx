@@ -50,7 +50,7 @@ function Players({ playerKey = 'revesz' }) {
     } = playersData[playerKey] || playersData.revesz;
 
     return (
-        <div>
+        <div className={styles.body}>
             <nav className={styles.nav}>
                 <div className={styles.logo2}>
                     <img src={futbinLogo} alt="Futbin Logo" />
