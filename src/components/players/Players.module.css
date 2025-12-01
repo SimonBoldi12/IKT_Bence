@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .nav{
     display: flex;
     justify-content: space-around;
@@ -329,46 +333,26 @@ nav a{
     color: #D21233;
 }
 
-progress {
-  width: 100%;        
-  height: 7px;         
-  border-radius: 50px;
-  overflow: hidden;     
-  background-color: #eee;
+/* chemistry / players styles moved from HomePage.module.css */
+
+.chem{
+    width: 100%;
+    padding: 0px 20px;
 }
 
-progress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 50px;
+.chem h1 {
+    color: white;
+    font-size: 14pt;
+    margin: 10px 0;
 }
 
-progress[value]::-webkit-progress-value {
-  background-color: rgb(0, 200, 0);
-  border-radius: 50px;
-  transition: width 0.3s ease; 
-}
-
-progress[value]::-moz-progress-bar {
-  background-color: rgb(0, 200, 0);
-  border-radius: 50px;
-  transition: width 0.3s ease;
-}
-
-.pirosProgress[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 50px;
-}
-
-.pirosProgress[value]::-webkit-progress-value {
-  background-color: #D21233;
-  border-radius: 50px;
-  transition: width 0.3s ease; 
-}
-
-.pirosProgress[value]::-moz-progress-bar {
-  background-color: #D21233;
-  border-radius: 50px;
-  transition: width 0.3s ease;
+.exp{
+    color: white;
+    padding: 3px 10px;
+    border-radius: 13px;
+    background-color: rgb(0, 140, 255);
+    font-weight: bold;
+    text-align: center;
 }
 
 .persons img{
@@ -391,22 +375,79 @@ progress[value]::-moz-progress-bar {
     grid-template-columns: 30px 80px 80px 80px;
 }
 
-.chem{
-    width: 100%;
-    padding: 0px 20px;
+.ketto {
+    /* helper for two-person group spacing */
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
-.chem h1 {
-    color: white;
-    font-size: 14pt;
-    margin: 10px 0;
+.harom {
+    /* helper for three-person group spacing */
+    display: flex;
+    gap: 6px;
+    align-items: center;
 }
 
-.exp{
-    color: white;
-    padding: 3px 10px;
-    border-radius: 13px;
-    background-color: rgb(0, 140, 255);
+#top{
+    font-size: 9pt;
+    color: #999999;
     font-weight: bold;
-    text-align: center;
+}
+
+/* top 3 block */
+.top-harom { /* container if needed */
+    margin-top: 8px;
+}
+
+.topok {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sor-elso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* progress and variants */
+progress {
+  width: 100%;
+  height: 7px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 50px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: rgb(0, 200, 0);
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+/* Firefox */
+progress[value]::-moz-progress-bar {
+  background-color: rgb(0, 200, 0);
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+/* colored progress variants */
+#sarga[value]::-webkit-progress-value { background-color: #F1BD1F; border-radius: 50px; transition: width 0.3s ease; }
+#sarga[value]::-moz-progress-bar { background-color: #F1BD1F; border-radius: 50px; transition: width 0.3s ease; }
+
+#piros[value]::-webkit-progress-value { background-color: #D21233; border-radius: 50px; transition: width 0.3s ease; }
+#piros[value]::-moz-progress-bar { background-color: #D21233; border-radius: 50px; transition: width 0.3s ease; }
+
+/* small chemistry icon size (if used) */
+.chemistryIcon {
+    width: 14px;
+    height: 14px;
 }
