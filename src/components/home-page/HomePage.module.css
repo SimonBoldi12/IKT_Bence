@@ -219,9 +219,13 @@ nav a{
 }
 
 .kartyak{
-    width: 70%;
+    width: 90%;
     margin: 50px auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    gap: 20px;
 }
 
 .adatsor{
@@ -387,49 +391,12 @@ progress[value]::-webkit-progress-value {
   transition: width 0.3s ease; 
 }
 
-/* Firefox támogatás */
 progress[value]::-moz-progress-bar {
   background-color: rgb(0, 200, 0);
   border-radius: 50px;
   transition: width 0.3s ease;
 }
 
-
-
-#sarga[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 50px;
-}
-
-#sarga[value]::-webkit-progress-value {
-  background-color: #F1BD1F;
-  border-radius: 50px;
-  transition: width 0.3s ease; 
-}
-
-/* Firefox támogatás */
-#sarga[value]::-moz-progress-bar {
-  background-color: #F1BD1F;
-  border-radius: 50px;
-  transition: width 0.3s ease;
-}
-
-#piros[value]::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 50px;
-}
-
-#piros[value]::-webkit-progress-value {
-  background-color: #D21233;
-  border-radius: 50px;
-  transition: width 0.3s ease; 
-}
-
-#piros[value]::-moz-progress-bar {
-  background-color: #D21233;
-  border-radius: 50px;
-  transition: width 0.3s ease;
-}
 
 .persons img{
     width: 20px;
@@ -455,9 +422,6 @@ progress[value]::-moz-progress-bar {
     font-size: 9pt;
     color: #999999;
     font-weight: bold;
-}
-.harom{
-    
 }
 
 .chem{

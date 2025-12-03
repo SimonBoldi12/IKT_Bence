@@ -1,3 +1,4 @@
+import { usePlayerRating } from '../../hooks/usePlayerRating.jsx';
 import styles from './Players.module.css';
 import futbinLogo from '../../assets/futbin.png';
 import reveszImg from '../../assets/Révész.png';
@@ -50,6 +51,8 @@ const imageMap = {
 };
 
 function Players({ playerKey = 'revesz' }) {
+    const { rating, liked, handleLike, handleDislike } = usePlayerRating(playerKey);
+    
     const {
         name,
         promo,
@@ -104,14 +107,24 @@ function Players({ playerKey = 'revesz' }) {
                         <p>Evolution</p>
                     </div>
                     <div className={styles.ertekeles}>
-                        <div className={styles.sor}>
+                        <button
+                            className={`${styles.sor} ${liked === true ? styles.liked : ''}`}
+                            onClick={handleLike}
+                            style={{ cursor: 'pointer', border: 'none', background: 'inherit' }}
+                        >
                             <img src={likeSvg} alt="Like" />
-                            <p>{likes}</p>
-                        </div>
-                        <div className={styles.sor}>
+                            <p>{liked === true ? likes + rating : likes}</p>
+                            {liked === true && <span className={styles.ratingBadge}>+{rating}</span>}
+                        </button>
+                        <button
+                            className={`${styles.sor} ${liked === false ? styles.disliked : ''}`}
+                            onClick={handleDislike}
+                            style={{ cursor: 'pointer', border: 'none', background: 'inherit' }}
+                        >
                             <img src={dislikeSvg} alt="Dislike" />
-                            <p>{dislikes}</p>
-                        </div>
+                            <p>{liked === false ? dislikes + rating : dislikes}</p>
+                            {liked === false && <span className={styles.ratingBadge}>{rating}</span>}
+                        </button>
                         <div className={styles.sor}>
                             <img src={commentSvg} alt="Comment" />
                             <p>Comments ({comments})</p>

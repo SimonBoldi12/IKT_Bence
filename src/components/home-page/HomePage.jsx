@@ -1,4 +1,5 @@
 import styles from './HomePage.module.css';
+import PlayerCard from './PlayerCard.jsx';
 import futbinLogo from '../../assets/futbin.png';
 import futbinLogo2 from '../../assets/futbin (2).png';
 import reveszImg from '../../assets/Révész.png';
@@ -66,13 +67,11 @@ function HomePage({ onPlayerSelect }) {
                 </div>
                 <div className={styles.kartyak}>
                     {players.map((player, index) => (
-                        <button
+                        <PlayerCard
                             key={index}
-                            onClick={() => onPlayerSelect && onPlayerSelect(player.key)}
-                            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
-                        >
-                            <img src={player.src} alt={player.alt} />
-                        </button>
+                            player={player}
+                            onPlayerSelect={onPlayerSelect}
+                        />
                     ))}
                 </div>
                 <div className={styles.popular}>
