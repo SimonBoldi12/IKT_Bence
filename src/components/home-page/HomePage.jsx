@@ -17,6 +17,7 @@ import haalImg from "../../assets/haal.png";
 import hakimiImg from "../../assets/hakimi.png";
 import { useState } from "react";
 import SearchPanel from "../search-panel/SearchPanel";
+import PlayerCard from './PlayerCard.jsx';
 
 function HomePage({ onPlayerSelect }) {
   const players = [
@@ -92,18 +93,11 @@ function HomePage({ onPlayerSelect }) {
         </div>
         <div className={styles.kartyak}>
           {players.map((player, index) => (
-            <button
+            <PlayerCard
               key={index}
-              onClick={() => onPlayerSelect && onPlayerSelect(player.key)}
-              style={{
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                padding: 0,
-              }}
-            >
-              <img src={player.src} alt={player.alt} />
-            </button>
+              player={player}
+              onPlayerSelect={onPlayerSelect}
+            />
           ))}
         </div>
         <div className={styles.popular}>
