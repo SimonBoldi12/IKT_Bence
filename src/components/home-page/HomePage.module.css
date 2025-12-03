@@ -39,6 +39,7 @@
 }
 .keresosav input{
     height: 50px;
+    position: relative;
     width: 500px;
     padding: 15px;
     border: 2px solid rgb(167, 165, 165);
@@ -479,3 +480,19 @@ progress[value]::-moz-progress-bar {
     font-weight: bold;
     text-align: center;
 }
+
+.results {
+    position: absolute;
+    top: 185px;           
+    right: 150px;
+    width: 503px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: auto;
+    overflow-y: auto;
+    z-index: 9999;        
+    padding: 4px 0;
+}
+
+
