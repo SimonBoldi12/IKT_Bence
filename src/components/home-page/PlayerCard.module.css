@@ -1,0 +1,122 @@
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardContainer {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+
+.cardButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: block;
+}
+
+.cardImage {
+    width: 170px;
+    margin: 5px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.cardImage:hover {
+    transform: scale(1.05);
+}
+
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.ratingBadge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: rgba(255, 100, 0, 0.7);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 150, 50, 0.5);
+    min-width: 50px;
+    justify-content: center;
+}
+
+.ratingBadge span {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.ratingsRow {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ratingItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background: rgba(77, 220, 125, 0.7);
+    color: black;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 9px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    min-width: 38px;
+    justify-content: center;
+    border: 1px solid rgba(77, 220, 125, 0.5);
+}
+
+.ratingIcon {
+    width: 10px;
+    height: 10px;
+    filter: brightness(0);
+    margin-right: 1px;
+}
+
+.ratingValue {
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+/* Badge color variants */
+.ratingBadge.like {
+    background: rgba(77,220,125,0.9);
+    color: black;
+    border: 1px solid rgba(60,200,100,0.6);
+}
+
+.ratingBadge.dislike {
+    background: rgba(210,40,40,0.92);
+    color: white;
+    border: 1px solid rgba(220,80,80,0.6);
+}
+
+.fire {
+    margin-right: 6px;
+}
+
+.ratingNumber {
+    font-size: 12px;
+}
