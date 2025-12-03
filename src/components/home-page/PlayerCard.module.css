@@ -99,3 +99,24 @@
     font-weight: bold;
     letter-spacing: -0.5px;
 }
+
+/* Badge color variants */
+.ratingBadge.like {
+    background: rgba(77,220,125,0.9);
+    color: black;
+    border: 1px solid rgba(60,200,100,0.6);
+}
+
+.ratingBadge.dislike {
+    background: rgba(210,40,40,0.92);
+    color: white;
+    border: 1px solid rgba(220,80,80,0.6);
+}
+
+.fire {
+    margin-right: 6px;
+}
+
+.ratingNumber {
+    font-size: 12px;
+}
