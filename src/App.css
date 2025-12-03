@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(95deg,rgba(31, 18, 74, 1) 0%, rgba(36, 137, 209, 1) 35%, rgba(0, 255, 102, 1) 100%);
+}
+

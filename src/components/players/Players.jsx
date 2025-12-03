@@ -80,7 +80,7 @@ function Players({ playerKey = 'revesz' }) {
             <nav className={styles.nav}>
                 <div className={styles.logo2}>
                     <img src={futbinLogo} alt="Futbin Logo" />
-                    <input type="text" id="kereses2" placeholder="Search for EA FC26 player..." />
+                    <input type="text" className={styles.kereses2} placeholder="Search for EA FC26 player..." />
                 </div>
                 <div className={styles.menu}>
                     <a href="/">Players</a>
@@ -397,11 +397,11 @@ function Players({ playerKey = 'revesz' }) {
                             </div>
                         </div>
 
-                        <p id="top" className={styles['top']}>Top 3 community voted</p>
+                        <p id="top" className={styles.top}>Top 3 community voted</p>
 
-                        <div className={styles['top-harom']}>
+                        <div className={styles.top_harom}>
                             <div className={styles.topok}>
-                                <div className={styles['sor-elso']}>
+                                <div className={styles.sor_elso}>
                                     {/* svg */}
                                 </div>
                                 <progress id="file" value="72" max="100"></progress>

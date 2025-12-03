@@ -1,10 +1,15 @@
-*{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 .body{
     padding: 0;
     margin: 0;
 }
+
 .nav{
     display: flex;
     justify-content: space-around;
@@ -70,12 +75,14 @@
     align-items: center;
 }
 
-.windows{
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    border: 1px solid rgb(167, 167, 167);
-    border-radius: 10px;
+.windows {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain; 
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
 }
 
 .price{
@@ -112,6 +119,7 @@
 
 .frissit p{
     font-size: 10pt;
+    margin: 15px 0px;
 }
 
 .ar{
@@ -156,7 +164,7 @@ nav a{
     margin: 15px;
 }
 
-#kereses2{
+.kereses2{
     height: 40px;
     width: 250px;
     padding: 15px;
@@ -167,11 +175,11 @@ nav a{
     font-size: 12pt;
 }
 
-#kereses2:focus{
+.kereses2:focus{
     border: 1px solid rgb(77, 220, 125);
 }
 
-#kereses2::placeholder{
+.kereses2::placeholder{
     color: white;
 }
 
@@ -214,6 +222,7 @@ nav a{
     gap: 60px;
     color: rgb(77, 220, 125);
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .csapat .stat {
@@ -226,6 +235,7 @@ nav a{
     color: #b4b4b4;
     flex-wrap: wrap;
     font-size: 9pt;
+    margin: 10px 0;
 }
 
 .playstyles{
@@ -234,6 +244,7 @@ nav a{
     color: white;
     flex-wrap: wrap;
     font-size: 10pt;
+    margin: 10px 0;
 }
 
 .statisztika{
@@ -392,14 +403,14 @@ nav a{
     align-items: center;
 }
 
-#top{
+.top{
     font-size: 9pt;
     color: #999999;
     font-weight: bold;
 }
 
 /* top 3 block */
-.top-harom { /* container if needed */
+.top_harom { /* container if needed */
     margin-top: 8px;
 }
 
@@ -409,7 +420,7 @@ nav a{
     gap: 10px;
 }
 
-.sor-elso {
+.sor_elso {
     display: flex;
     align-items: center;
     justify-content: center;
