@@ -77,7 +77,7 @@ function HomePage({ onPlayerSelect }) {
                   player.alt.toLowerCase().includes(filter.toLowerCase())
                 )
                 .map((p, i) => (
-                  <SearchPanel key={i} img={p.src} alt={p.alt} onClick={() => onPlayerSelect(p.key)} />
+                  <SearchPanel key={p.i} img={p.src} alt={p.alt} onClick={() => onPlayerSelect(p.key)} />
                 ))}
             </div>
           )}

@@ -381,47 +381,6 @@ function Players({ playerKey = 'revesz' }) {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.chem}>
-                        <h1 className={styles.title}>AcceleRATE & Chemistry</h1>
-                        <p className={styles.exp}>EXPLOSIVE</p>
-
-                        <div className={styles.nationteam}>
-                            <div className={styles.persons}>
-                                <div className={styles.team}>
-                                    <img src="../assets/mancity.png" alt=""/>
-                                    <div className={styles.ketto}>
-                                        <img src="../assets/person-svgrepo-com (1).svg" alt=""/>
-                                        <img src="../assets/person-svgrepo-com.svg" alt=""/>
-                                    </div>
-                                    <div className={styles.jatekosNev}>
-                                        <p>Révész</p>
-                                        <p className={styles.feher}>CAM</p>
-                                    </div>
-                                    <div className={styles.kemia}>
-                                        <div className={styles.felirat}>
-                                            <p>Basic</p>
-                                            <p>4/7</p>
-                                        </div>
-                                        <div className={styles.progressbar}>
-                                            <div className={styles.progress}></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p id="top" className={styles.top}>Top 3 community voted</p>
-
-                        <div className={styles.top_harom}>
-                            <div className={styles.topok}>
-                                <div className={styles.sor_elso}>
-                                    {/* svg */}
-                                </div>
-                                <progress id="file" value="72" max="100"></progress>
-                                <p>59%</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
